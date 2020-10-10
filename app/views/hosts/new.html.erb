@@ -1,2 +1,23 @@
-<h1>Hosts#new</h1>
-<p>Find me in app/views/hosts/new.html.erb</p>
+<h3>Create A New Host Account</h3>
+
+<%= form_for @host do |f| %>
+    <%= f.label :email, "Email" %>
+    <%= f.text_field :email %> <br>
+
+    <%= f.label :first_name, "First Name" %>
+    <%= f.text_field :first_name %> <br>
+
+    <%= f.label :last_name, "Last Name" %>
+    <%= f.text_field :last_name %> <br>
+
+    <%= f.label :phone_number, "Phone Number" %>
+    <%= f.text_field :phone_number %> <br>
+
+    <%= f.label :bio, "Bio" %>
+    <%= f.text_area :bio %> <br>
+
+    <%= f.label :password, "Password" %>
+    <%= f.password_field :password%>
+
+    <%= f.submit "Create Host"%>
+<% end %>

@@ -1,2 +1,12 @@
-<h1>Hosts#show</h1>
-<p>Find me in app/views/hosts/show.html.erb</p>
+<h2>Welcome, <%= @host.first_name %> <%= @host.last_name %></h2>
+
+<strong><%= @host.email %></strong>
+
+<h4>Phone Number:</h4>
+
+<%= @host.phone_number %>
+
+<h4>Bio:</h4>
+
+<%= @host.bio %>
+
